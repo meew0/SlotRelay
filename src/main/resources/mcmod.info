@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "slotrelay",
+  "name": "Slot Relay",
+  "description": "Mod to transfer items between specific slots in inventories",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["meew0"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

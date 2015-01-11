@@ -6,6 +6,9 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
 import org.apache.logging.log4j.Logger;
 
@@ -13,7 +16,7 @@ import org.apache.logging.log4j.Logger;
 public class SlotRelay
 {
     public static final String MODID = "slotrelay";
-    public static final String VERSION = "1.0";
+    public static final String VERSION = "1.0.1";
     public static final String NAME = "Slot Relay";
 
     public static Configuration config;
@@ -24,7 +27,7 @@ public class SlotRelay
     public static Block slotRelay;
 
     public static void debug(String d) {
-        log.info(d);
+        //log.info(d);
     }
 
     @EventHandler
@@ -40,6 +43,9 @@ public class SlotRelay
         slotRelay = new BlockSlotRelay();
 
         GameRegistry.registerBlock(slotRelay, "slotRelay");
+
+        GameRegistry.addShapedRecipe(new ItemStack(slotRelay), "OHO", "ORO", "OHO", 'O', Blocks.obsidian,
+                'H', Blocks.hopper, 'R', Items.redstone);
     }
 
     @EventHandler
