@@ -1,0 +1,3 @@
+tile.slotRelay.name=Slot Relay
+msg.insertSlotChanged.name=Insert slot has been changed to %n
+msg.extractSlotChanged.name=Extract slot has been changed to %n

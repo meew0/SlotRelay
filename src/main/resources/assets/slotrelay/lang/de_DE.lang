@@ -1,0 +1,3 @@
+tile.slotRelay.name=Slot-Transferomat
+msg.insertSlotChanged.name=Insertions-Slot wurde zu %n geändert
+msg.extractSlotChanged.name=Extraktions-Slot wurde zu %n geändert
