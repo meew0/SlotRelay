@@ -92,7 +92,7 @@ public class TileEntitySlotRelay extends TileEntity {
                 }
             }
         } catch(Exception e) {
-            SlotRelay.log.error("An error has been encountered while processing item transfer!", e);
+            SlotRelay.log.error("An error has been encountered while processing item transfer! Ignoring");
         }
     }
 
